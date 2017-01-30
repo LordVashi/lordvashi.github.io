@@ -1,0 +1,39 @@
+textarea {
+  resize: none;
+  outline: none;
+  overflow: hidden;
+  min-height: 60px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+h1 {
+  margin: 14px;
+  font-family: verdana;
+  margin-bottom: 4px;
+}
+
+h3 {
+  margin-left: 18px;
+  margin-top: 2px;
+  margin-bottom: 8px;
+  font-family: verdana;
+  font-size: 12pt;
+}
+
+#MainTextArea {
+  width: 80%;
+  padding:  4px;
+  margin: 12px;
+  border: none;
+}
+
+#LocationSelector {
+  height: 32px;
+  width: 80%;
+  padding: 4px;
+  margin: 12px;
+  outline: none;
+}
