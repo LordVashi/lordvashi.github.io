@@ -1296,7 +1296,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/4813/alligator+pear",
         "icon": "https://secure.xivdb.com/img/game_local/4/4813.jpg",
-        "description": "A soft green fruit, also known as “Shroud butter.” Though not thought to be indigenous to Eorzea, it is not certain how the plant first came to the realm.\n\n\n<em class=\"lime\">EXP Bonus:</em> +3% \n<em class=\"lime\">Duration:</em> 30m\n(Duration can be extended to 60m by consuming multiple servings)"
+        "description": "A soft green fruit, also known as “Shroud butter.” Though not thought to be indigenous to Eorzea, it is not certain how the plant first came to the realm."
     },
     {
         "name": "Almonds",
@@ -2162,7 +2162,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/7592/apricot",
         "icon": "https://secure.xivdb.com/img/game_local/7/7592.jpg",
-        "description": "A variety of stone fruit borne over from the Near East.<br><br>Its orange flesh is at once sweet and tart.\n\n\n<em class=\"lime\">EXP Bonus:</em> +3% \n<em class=\"lime\">Duration:</em> 30m\n(Duration can be extended to 60m by consuming multiple servings)"
+        "description": "A variety of stone fruit borne over from the Near East.<br><br>Its orange flesh is at once sweet and tart."
     },
     {
         "name": "Archaeornis Skin",
@@ -6018,7 +6018,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/4814/blood+currants",
         "icon": "https://secure.xivdb.com/img/game_local/4/4814.jpg",
-        "description": "A tart red berry found growing throughout the Black Shroud.\n\n\n<em class=\"lime\">EXP Bonus:</em> +3% \n<em class=\"lime\">Duration:</em> 30m\n(Duration can be extended to 60m by consuming multiple servings)"
+        "description": "A tart red berry found growing throughout the Black Shroud."
     },
     {
         "name": "Blood Orange",
@@ -6057,7 +6057,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/7595/blood+orange",
         "icon": "https://secure.xivdb.com/img/game_local/7/7595.jpg",
-        "description": "A rare variety of orange grown in La Noscea, named for its unusual red flesh.\n\n\n<em class=\"lime\">EXP Bonus:</em> +3% \n<em class=\"lime\">Duration:</em> 30m\n(Duration can be extended to 60m by consuming multiple servings)"
+        "description": "A rare variety of orange grown in La Noscea, named for its unusual red flesh."
     },
     {
         "name": "Bloodgrass",
@@ -9226,7 +9226,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/12897/cloud+banana",
         "icon": "https://secure.xivdb.com/img/game_local/1/12897.jpg",
-        "description": "Though it resembles a tree, cloud bananas actually grow from an oversized herb.<br><br>That does not, however, make them any less sweet.\n\n\n<em class=\"lime\">EXP Bonus:</em> +3% \n<em class=\"lime\">Duration:</em> 30m\n(Duration can be extended to 60m by consuming multiple servings)"
+        "description": "Though it resembles a tree, cloud bananas actually grow from an oversized herb.<br><br>That does not, however, make them any less sweet."
     },
     {
         "name": "Cloud Mica",
@@ -14490,7 +14490,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/4810/faerie+apple",
         "icon": "https://secure.xivdb.com/img/game_local/4/4810.jpg",
-        "description": "A tart variety of apple commonly found growing in the cool mountain passes of Coerthas.\n\n\n<em class=\"lime\">EXP Bonus:</em> +3% \n<em class=\"lime\">Duration:</em> 30m\n(Duration can be extended to 60m by consuming multiple servings)"
+        "description": "A tart variety of apple commonly found growing in the cool mountain passes of Coerthas."
     },
     {
         "name": "Ferberite",
@@ -19499,7 +19499,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/12889/heavens+lemon",
         "icon": "https://secure.xivdb.com/img/game_local/1/12889.jpg",
-        "description": "Possibly due to the increased sunlight it receives growing above the clouds, heavens lemons lack the acidity of normal sun lemons.\n\n\n<em class=\"lime\">EXP Bonus:</em> +3% \n<em class=\"lime\">Duration:</em> 30m\n(Duration can be extended to 60m by consuming multiple servings)"
+        "description": "Possibly due to the increased sunlight it receives growing above the clouds, heavens lemons lack the acidity of normal sun lemons."
     },
     {
         "name": "Highland Oregano",
@@ -19919,7 +19919,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/6147/honey+lemon",
         "icon": "https://secure.xivdb.com/img/game_local/6/6147.jpg",
-        "description": "This rare type of lemon native to the continent of Othard is so sweet, it can be eaten raw.\n\n\n<em class=\"lime\">EXP Bonus:</em> +3% \n<em class=\"lime\">Duration:</em> 30m\n(Duration can be extended to 60m by consuming multiple servings)"
+        "description": "This rare type of lemon native to the continent of Othard is so sweet, it can be eaten raw."
     },
     {
         "name": "Honeydew Almonds",
@@ -21359,7 +21359,7 @@ Final.results = [
         ],
         "url": "http://xivdb.com/item/4809/la+noscean+orange",
         "icon": "https://secure.xivdb.com/img/game_local/4/4809.jpg",
-        "description": "A sweet citrus fruit known to thrive in the temperate climate of lower La Noscea.\n\n\n<em class=\"lime\">EXP Bonus:</em> +3% \n<em class=\"lime\">Duration:</em> 30m\n(Duration can be extended to 60m by consuming multiple servings)"
+        "description": "A sweet citrus fruit known to thrive in the temperate climate of lower La Noscea."
     },
     {
         "name": "Lalafellin Lentil",
@@ -22539,7 +22539,7 @@ Final.results = [
         ],
         "url": "http://xivdb.com/item/4808/lowland+grapes",
         "icon": "https://secure.xivdb.com/img/game_local/4/4808.jpg",
-        "description": "A semisweet variety of grape which has adapted to the volcanic soil abundant on Vylbrand.\n\n\n<em class=\"lime\">EXP Bonus:</em> +3% \n<em class=\"lime\">Duration:</em> 30m\n(Duration can be extended to 60m by consuming multiple servings)"
+        "description": "A semisweet variety of grape which has adapted to the volcanic soil abundant on Vylbrand."
     },
     {
         "name": "Magma Beet",
@@ -23366,7 +23366,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/6146/mirror+apple",
         "icon": "https://secure.xivdb.com/img/game_local/6/6146.jpg",
-        "description": "A sweet yet sour variety of apples native to Coerthas.<br><br>When polished, the skins become so shiny it is said one can see their own reflection in them.\n\n\n<em class=\"lime\">EXP Bonus:</em> +3% \n<em class=\"lime\">Duration:</em> 30m\n(Duration can be extended to 60m by consuming multiple servings)"
+        "description": "A sweet yet sour variety of apples native to Coerthas.<br><br>When polished, the skins become so shiny it is said one can see their own reflection in them."
     },
     {
         "name": "Mistletoe",
@@ -24468,7 +24468,7 @@ Final.results = [
         ],
         "url": "http://xivdb.com/item/6149/night+milk",
         "icon": "https://secure.xivdb.com/img/game_local/6/6149.jpg",
-        "description": "Rich and creamy buffalo milk harvested immediately before the beast falls asleep.\n\n\n<em class=\"lime\">EXP Bonus:</em> +3% \n<em class=\"lime\">Duration:</em> 30m\n(Duration can be extended to 60m by consuming multiple servings)"
+        "description": "Rich and creamy buffalo milk harvested immediately before the beast falls asleep."
     },
     {
         "name": "Noble Grapes",
@@ -25289,7 +25289,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/12896/old+world+fig",
         "icon": "https://secure.xivdb.com/img/game_local/1/12896.jpg",
-        "description": "A symbol of long life and femininity, this autumn fruit was originally brought from their homeland to Eorzea by the Sharlayans.\n\n\n<em class=\"lime\">EXP Bonus:</em> +3% \n<em class=\"lime\">Duration:</em> 30m\n(Duration can be extended to 60m by consuming multiple servings)"
+        "description": "A symbol of long life and femininity, this autumn fruit was originally brought from their homeland to Eorzea by the Sharlayans."
     },
     {
         "name": "Pearl Ginger",
@@ -25727,7 +25727,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/4812/pixie+plums",
         "icon": "https://secure.xivdb.com/img/game_local/4/4812.jpg",
-        "description": "A tart fruit commonly grown in mountain orchards in the Coerthas region.\n\n\n<em class=\"lime\">EXP Bonus:</em> +3% \n<em class=\"lime\">Duration:</em> 30m\n(Duration can be extended to 60m by consuming multiple servings)"
+        "description": "A tart fruit commonly grown in mountain orchards in the Coerthas region."
     },
     {
         "name": "Platinum Ore",
@@ -26378,7 +26378,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/4816/prickly+pineapple",
         "icon": "https://secure.xivdb.com/img/game_local/4/4816.jpg",
-        "description": "A sweet and tangy fruit covered in a thick, spike-laden skin.\n\n\n<em class=\"lime\">EXP Bonus:</em> +3% \n<em class=\"lime\">Duration:</em> 30m\n(Duration can be extended to 60m by consuming multiple servings)"
+        "description": "A sweet and tangy fruit covered in a thick, spike-laden skin."
     },
     {
         "name": "Pudding Flesh",
@@ -29718,7 +29718,7 @@ Final.results = [
         ],
         "url": "http://xivdb.com/item/4815/rolanberry",
         "icon": "https://secure.xivdb.com/img/game_local/4/4815.jpg",
-        "description": "A tart fruit─one of few still found growing in the devastated region of Mor Dhona.\n\n\n<em class=\"lime\">EXP Bonus:</em> +3% \n<em class=\"lime\">Duration:</em> 30m\n(Duration can be extended to 60m by consuming multiple servings)"
+        "description": "A tart fruit─one of few still found growing in the devastated region of Mor Dhona."
     },
     {
         "name": "Rosemary",
@@ -31657,7 +31657,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/12904/snurbleberry",
         "icon": "https://secure.xivdb.com/img/game_local/1/12904.jpg",
-        "description": "This sweet, yet tart red berry is covered in tiny soft hairs that can be removed by lightly rubbing the fruit between one's palms.\n\n\n<em class=\"lime\">EXP Bonus:</em> +3% \n<em class=\"lime\">Duration:</em> 30m\n(Duration can be extended to 60m by consuming multiple servings)"
+        "description": "This sweet, yet tart red berry is covered in tiny soft hairs that can be removed by lightly rubbing the fruit between one's palms."
     },
     {
         "name": "Soiled Femur",
@@ -32367,7 +32367,7 @@ Final.results = [
         ],
         "url": "http://xivdb.com/item/4811/sun+lemon",
         "icon": "https://secure.xivdb.com/img/game_local/4/4811.jpg",
-        "description": "A sour citrus fruit indigenous to the Near East.\n\n\n<em class=\"lime\">EXP Bonus:</em> +3% \n<em class=\"lime\">Duration:</em> 30m\n(Duration can be extended to 60m by consuming multiple servings)"
+        "description": "A sour citrus fruit indigenous to the Near East."
     },
     {
         "name": "Sun Mica",
@@ -35885,7 +35885,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/12888/yak+milk",
         "icon": "https://secure.xivdb.com/img/game_local/1/12888.jpg",
-        "description": "The unique flavor of yak milk can be somewhat off-putting to those raised on cow or aldgoat milk.\n\n\n<em class=\"lime\">EXP Bonus:</em> +3% \n<em class=\"lime\">Duration:</em> 30m\n(Duration can be extended to 60m by consuming multiple servings)"
+        "description": "The unique flavor of yak milk can be somewhat off-putting to those raised on cow or aldgoat milk."
     },
     {
         "name": "Yellow Copper Ore",

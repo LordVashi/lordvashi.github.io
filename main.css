@@ -1,39 +1,113 @@
-textarea {
-  resize: none;
-  outline: none;
-  overflow: hidden;
-  min-height: 60px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #111;
+  margin: 0;
+  height: 100%;
+}
+
+#AppMain {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 40px;
+  padding-bottom: 80px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  background-color: #222;
+  color: #EED;
 }
 
 h1 {
-  margin: 14px;
-  font-family: verdana;
-  margin-bottom: 4px;
+  margin: 2px;
+  letter-spacing: 3px;
 }
 
 h3 {
-  margin-left: 18px;
-  margin-top: 2px;
-  margin-bottom: 8px;
-  font-family: verdana;
-  font-size: 12pt;
-}
-
-#MainTextArea {
-  width: 80%;
-  padding:  4px;
-  margin: 12px;
-  border: none;
+  margin-left: 36px;
+  margin-top: -6px;
+  margin-bottom: 20px;
+  font-size: 10pt;
 }
 
 #LocationSelector {
   height: 32px;
-  width: 80%;
+  width: 100%;
   padding: 4px;
-  margin: 12px;
   outline: none;
+  background-color: #111;
+  color: #EEE;
+  border-radius: 6px;
+  border-color: #555;
+}
+
+.itemBlock {
+  margin-top: 16px;
+}
+
+.unexpandedBlock {
+  height: auto;
+  min-height: 96px;
+  min-width: 400px;
+  vertical-align: middle;
+  display: inline-block;
+  width: 93%;
+  background-color: #131313;
+  padding-left: 3%;
+  padding-right: 3%;
+  border-style: ridge;
+  border-radius: 8px;
+  border-color: #555;
+}
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 64px;
+  height: 64px;
+}
+
+.icon img {
+  width: 64px;
+  height: 64px;
+  outline: 4px ridge #777;
+  outline-offset: -2px;
+}
+
+.text {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 40px;
+  width: 70%;
+}
+
+.text h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 4px;
+  margin-top: 0px;
+}
+
+.text p {
+  font-size: 13px;
+  margin-left: 16px;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  color: #808086;
+}
+
+.expandButtons span {
+  border: 2px ridge #555;
+  border-radius: 10px;
+  margin-left: 32px;
+  font-size: 13px;
+  padding: 0px 6px 0px 6px;
+}
+
+.expandButtons span.disabled {
+  color: #666;
 }
