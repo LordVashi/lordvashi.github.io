@@ -25,6 +25,7 @@ class FFMaterialBuddy {
         var index = Locations.map.findIndex((loc) => loc.map == selected);
         var ids = Locations.map[index].ids;
         var itemsRaw = Final.results.filter((item) => ids.indexOf(item.id) != -1);
+        this.main.empty();
         var prettyItems = itemsRaw.map(item => this.formHTML(item)).reduce((total, add) => total.append(add), this.main);
     }
     formHTML(item) {
