@@ -1390,7 +1390,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/4790/aloe",
         "icon": "https://secure.xivdb.com/img/game_local/4/4790.jpg",
-        "description": "A thick spiny-leaved cactus indigenous to the southern continent of Meracydia.<br><br>The Miqo'te are known to treat severe burns with the cool gel-like substance found inside the leaves."
+        "description": "A thick spiny-leaved cactus indigenous to the southern continent of Meracydia.  The Miqo'te are known to treat severe burns with the cool gel-like substance found inside the leaves."
     },
     {
         "name": "Alumen",
@@ -1429,7 +1429,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/5524/alumen",
         "icon": "https://secure.xivdb.com/img/game_local/5/5524.jpg",
-        "description": "A white mineral used by leatherworkers to tan animal hides.<br><br>It also has deodorizing properties."
+        "description": "A white mineral used by leatherworkers to tan animal hides.  It also has deodorizing properties."
     },
     {
         "name": "Amphiptere Skin",
@@ -2162,7 +2162,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/7592/apricot",
         "icon": "https://secure.xivdb.com/img/game_local/7/7592.jpg",
-        "description": "A variety of stone fruit borne over from the Near East.<br><br>Its orange flesh is at once sweet and tart."
+        "description": "A variety of stone fruit borne over from the Near East.  Its orange flesh is at once sweet and tart."
     },
     {
         "name": "Archaeornis Skin",
@@ -2757,7 +2757,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/5263/basilisk+egg",
         "icon": "https://secure.xivdb.com/img/game_local/5/5263.jpg",
-        "description": "The egg of a basilisk.<br><br>Its thick shell contains high concentrations of the various ores and minerals upon which the giant lizards are said to feed."
+        "description": "The egg of a basilisk.  Its thick shell contains high concentrations of the various ores and minerals upon which the giant lizards are said to feed."
     },
     {
         "name": "Bat Fang",
@@ -4835,7 +4835,7 @@ Final.results = [
         ],
         "url": "http://xivdb.com/item/5492/beastkin+blood",
         "icon": "https://secure.xivdb.com/img/game_local/5/5492.jpg",
-        "description": "The warm blood of a beast.<br><br>For some unknown reason, the humours will not coagulate."
+        "description": "The warm blood of a beast.  For some unknown reason, the humours will not coagulate."
     },
     {
         "name": "Beehive Chip",
@@ -5720,7 +5720,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/5525/black+alumen",
         "icon": "https://secure.xivdb.com/img/game_local/5/5525.jpg",
-        "description": "A darker variety of the mineral used by leatherworkers to tan animal hides.<br><br>It lacks the deodorizing properties of its lighter counterpart."
+        "description": "A darker variety of the mineral used by leatherworkers to tan animal hides.  It lacks the deodorizing properties of its lighter counterpart."
     },
     {
         "name": "Black Limestone",
@@ -5979,7 +5979,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/4800/black+truffle",
         "icon": "https://secure.xivdb.com/img/game_local/4/4800.jpg",
-        "description": "A rare black mushroom that grows in the soil, rather than above it, making the specimen almost impossible to locate.<br><br>It is treasured as a delicacy for its unique aroma."
+        "description": "A rare black mushroom that grows in the soil, rather than above it, making the specimen almost impossible to locate.  It is treasured as a delicacy for its unique aroma."
     },
     {
         "name": "Blood Currants",
@@ -7763,7 +7763,7 @@ Final.results = [
         ],
         "url": "http://xivdb.com/item/4818/buffalo+beans",
         "icon": "https://secure.xivdb.com/img/game_local/4/4818.jpg",
-        "description": "A common variety of green bean recognizable by its long thin pods.<br><br>Buffalo are said to be fond of the beans, and have been known to eat entire crops if left unchecked."
+        "description": "A common variety of green bean recognizable by its long thin pods.  Buffalo are said to be fond of the beans, and have been known to eat entire crops if left unchecked."
     },
     {
         "name": "Burning Auricle",
@@ -8191,7 +8191,7 @@ Final.results = [
         ],
         "url": "http://xivdb.com/item/5540/carnation",
         "icon": "https://secure.xivdb.com/img/game_local/5/5540.jpg",
-        "description": "A beautiful red flower often planted in public gardens or picked and put on display in houses.<br><br>Large plantations of carnations can be found in and around Gridania."
+        "description": "A beautiful red flower often planted in public gardens or picked and put on display in houses.  Large plantations of carnations can be found in and around Gridania."
     },
     {
         "name": "Cashmere Fleece",
@@ -9226,7 +9226,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/12897/cloud+banana",
         "icon": "https://secure.xivdb.com/img/game_local/1/12897.jpg",
-        "description": "Though it resembles a tree, cloud bananas actually grow from an oversized herb.<br><br>That does not, however, make them any less sweet."
+        "description": "Though it resembles a tree, cloud bananas actually grow from an oversized herb.  That does not, however, make them any less sweet."
     },
     {
         "name": "Cloud Mica",
@@ -9450,7 +9450,7 @@ Final.results = [
         ],
         "url": "http://xivdb.com/item/4831/cloves",
         "icon": "https://secure.xivdb.com/img/game_local/4/4831.jpg",
-        "description": "A sweet-smelling spice made from the dried buds of the clove tree.<br><br>It is used to flavor confectionaries, and as an essential oil."
+        "description": "A sweet-smelling spice made from the dried buds of the clove tree.  It is used to flavor confectionaries, and as an essential oil."
     },
     {
         "name": "Cobalt Ore",
@@ -11133,7 +11133,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/12643/coriander",
         "icon": "https://secure.xivdb.com/img/game_local/1/12643.jpg",
-        "description": "A highly fragrant herb.<br><br>The leaves can be harvested and used in salads, or the plant can be allowed to bolt and the seeds gathered and used to spice ale."
+        "description": "A highly fragrant herb.  The leaves can be harvested and used in salads, or the plant can be allowed to bolt and the seeds gathered and used to spice ale."
     },
     {
         "name": "Cotton Boll",
@@ -11191,7 +11191,7 @@ Final.results = [
         ],
         "url": "http://xivdb.com/item/5343/cotton+boll",
         "icon": "https://secure.xivdb.com/img/game_local/5/5343.jpg",
-        "description": "The fibrous flower of the cotton plant.<br><br>Grown in abundance in the Black Shroud for Gridania's textile industry."
+        "description": "The fibrous flower of the cotton plant.  Grown in abundance in the Black Shroud for Gridania's textile industry."
     },
     {
         "name": "Cow Bitter",
@@ -11824,7 +11824,7 @@ Final.results = [
         ],
         "url": "http://xivdb.com/item/12640/dandelion",
         "icon": "https://secure.xivdb.com/img/game_local/1/12640.jpg",
-        "description": "This common flower produces a globe of lightweight seeds that are carried remarkable distances when blown in the wind.<br><br>While the stalk is filled with a toxic milky substance, the leaves and roots can be dried and brewed into medicinal infusions."
+        "description": "This common flower produces a globe of lightweight seeds that are carried remarkable distances when blown in the wind.  While the stalk is filled with a toxic milky substance, the leaves and roots can be dried and brewed into medicinal infusions."
     },
     {
         "name": "Dark Chestnut",
@@ -12333,7 +12333,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/9378/diamond+tear",
         "icon": "https://secure.xivdb.com/img/game_local/9/9378.jpg",
-        "description": "A glass-like shard retrieved from the fallen Lady of Frost.<br><br>It pulses with uncontrollably powerful ice-aspected energies."
+        "description": "A glass-like shard retrieved from the fallen Lady of Frost.  It pulses with uncontrollably powerful ice-aspected energies."
     },
     {
         "name": "Dimension Blade Fragment",
@@ -13146,7 +13146,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/12630/dragon+blood",
         "icon": "https://secure.xivdb.com/img/game_local/1/12630.jpg",
-        "description": "Most likely the blood of a dragon.<br><br>For some unknown reason, the humours will not coagulate."
+        "description": "Most likely the blood of a dragon.  For some unknown reason, the humours will not coagulate."
     },
     {
         "name": "Dragon Fang",
@@ -13280,7 +13280,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/12576/dragon+fang",
         "icon": "https://secure.xivdb.com/img/game_local/1/12576.jpg",
-        "description": "The rapier-like fang of an ancient dragon.<br><br>Some naturalists believe that the age of a dragon can be determined by horizontally slicing its tooth and counting the rings within."
+        "description": "The rapier-like fang of an ancient dragon.  Some naturalists believe that the age of a dragon can be determined by horizontally slicing its tooth and counting the rings within."
     },
     {
         "name": "Dragon Obsidian",
@@ -13319,7 +13319,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/5126/dragon+obsidian",
         "icon": "https://secure.xivdb.com/img/game_local/5/5126.jpg",
-        "description": "A hard yet light variety of obsidian.<br><br>Said to have been formed in the flames of a dragon's breath."
+        "description": "A hard yet light variety of obsidian.  Said to have been formed in the flames of a dragon's breath."
     },
     {
         "name": "Dragon Pepper",
@@ -15499,7 +15499,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/12641/gaelicatnip",
         "icon": "https://secure.xivdb.com/img/game_local/1/12641.jpg",
-        "description": "A relative to pepper- and spearmint, gaelicatnip is an aromatic herb often brewed into teas.<br><br>While it has no effect on the five races, the oil contained in the leaves is known to cause gaelicats and other normally aggressive feline beastkin to exhibit excessively playful behavior."
+        "description": "A relative to pepper- and spearmint, gaelicatnip is an aromatic herb often brewed into teas.  While it has no effect on the five races, the oil contained in the leaves is known to cause gaelicats and other normally aggressive feline beastkin to exhibit excessively playful behavior."
     },
     {
         "name": "Galago Mint",
@@ -15573,7 +15573,7 @@ Final.results = [
         ],
         "url": "http://xivdb.com/item/4834/galago+mint",
         "icon": "https://secure.xivdb.com/img/game_local/4/4834.jpg",
-        "description": "A leafy herb with a crisp, fragrant aroma.<br><br>It is often used in cooking and in teas, as well as for its essential oil."
+        "description": "A leafy herb with a crisp, fragrant aroma.  It is often used in cooking and in teas, as well as for its essential oil."
     },
     {
         "name": "Garlean Fiber",
@@ -16620,7 +16620,7 @@ Final.results = [
         ],
         "url": "http://xivdb.com/item/4829/garlean+garlic",
         "icon": "https://secure.xivdb.com/img/game_local/4/4829.jpg",
-        "description": "A pungent spice used to flavor many different varieties of dishes.<br><br>It is also thought to ward off vampiric bats, but there is no evidence to substantiate that claim."
+        "description": "A pungent spice used to flavor many different varieties of dishes.  It is also thought to ward off vampiric bats, but there is no evidence to substantiate that claim."
     },
     {
         "name": "Garlean Rubber",
@@ -17690,7 +17690,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/12635/gelato+flesh",
         "icon": "https://secure.xivdb.com/img/game_local/1/12635.jpg",
-        "description": "A quivering gelatinous lump of voidsent flesh neither cold nor sweet.<br><br>Consumption is not recommended, even during times of starvation."
+        "description": "A quivering gelatinous lump of voidsent flesh neither cold nor sweet.  Consumption is not recommended, even during times of starvation."
     },
     {
         "name": "Gil Bun",
@@ -18171,7 +18171,7 @@ Final.results = [
         ],
         "url": "http://xivdb.com/item/5560/grass+viper",
         "icon": "https://secure.xivdb.com/img/game_local/5/5560.jpg",
-        "description": "A deadly snake common in grasslands across Eorzea.<br><br>Its venom is known to contain a potent bleeding poison."
+        "description": "A deadly snake common in grasslands across Eorzea.  Its venom is known to contain a potent bleeding poison."
     },
     {
         "name": "Green Megalocrab Shell",
@@ -21398,7 +21398,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/4820/lalafellin+lentil",
         "icon": "https://secure.xivdb.com/img/game_local/4/4820.jpg",
-        "description": "Thin round beans resembling tiny convex lenses.<br><br>Thought to have been introduced to Eorzea by the realm's first Lalafellin settlers."
+        "description": "Thin round beans resembling tiny convex lenses.  Thought to have been introduced to Eorzea by the realm's first Lalafellin settlers."
     },
     {
         "name": "Large Levin Orb",
@@ -21776,7 +21776,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/5117/light+kidney+ore",
         "icon": "https://secure.xivdb.com/img/game_local/5/5117.jpg",
-        "description": "A reddish ore containing large quantities of iron.<br><br>Its wide availability makes it optimal for smelting in locations where purer forms of iron ore are difficult to procure, such as militia forges.<br><br>This particular type of kidney ore is far more porous than the common variety, making it much easier to transport."
+        "description": "A reddish ore containing large quantities of iron.  Its wide availability makes it optimal for smelting in locations where purer forms of iron ore are difficult to procure, such as militia forges.  This particular type of kidney ore is far more porous than the common variety, making it much easier to transport."
     },
     {
         "name": "Lightning Moraine",
@@ -22401,7 +22401,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/5112/limonite",
         "icon": "https://secure.xivdb.com/img/game_local/5/5112.jpg",
-        "description": "A decent-sized piece of rock containing a small amount of oxidized iron.<br><br>It is said to have deodorizing properties."
+        "description": "A decent-sized piece of rock containing a small amount of oxidized iron.  It is said to have deodorizing properties."
     },
     {
         "name": "Loaghtan Chump",
@@ -22656,7 +22656,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/4793/maiden+artichoke",
         "icon": "https://secure.xivdb.com/img/game_local/4/4793.jpg",
-        "description": "The leaf-like bud of an artichoke plant.<br><br>Due to the roughness of its petals, only the fleshy lower portions can be consumed, as well as the center of the bud, commonly known as the “heart.”"
+        "description": "The leaf-like bud of an artichoke plant.  Due to the roughness of its petals, only the fleshy lower portions can be consumed, as well as the center of the bud, commonly known as the “heart.”"
     },
     {
         "name": "Maiden Grass",
@@ -23086,7 +23086,7 @@ Final.results = [
         ],
         "url": "http://xivdb.com/item/5498/maple+sap",
         "icon": "https://secure.xivdb.com/img/game_local/5/5498.jpg",
-        "description": "An odorless and colorless liquid extracted from maple trees.<br><br>Can be boiled down to make sweet maple sugar."
+        "description": "An odorless and colorless liquid extracted from maple trees.  Can be boiled down to make sweet maple sugar."
     },
     {
         "name": "Marble",
@@ -23366,7 +23366,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/6146/mirror+apple",
         "icon": "https://secure.xivdb.com/img/game_local/6/6146.jpg",
-        "description": "A sweet yet sour variety of apples native to Coerthas.<br><br>When polished, the skins become so shiny it is said one can see their own reflection in them."
+        "description": "A sweet yet sour variety of apples native to Coerthas.  When polished, the skins become so shiny it is said one can see their own reflection in them."
     },
     {
         "name": "Mistletoe",
@@ -23405,7 +23405,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/5536/mistletoe",
         "icon": "https://secure.xivdb.com/img/game_local/5/5536.jpg",
-        "description": "A poisonous, parasitic plant which survives by attaching itself to other larger plants.<br><br>It is often gathered and put on display during regional winter festivals."
+        "description": "A poisonous, parasitic plant which survives by attaching itself to other larger plants.  It is often gathered and put on display during regional winter festivals."
     },
     {
         "name": "Moggle Mog XII's Whisker",
@@ -23526,7 +23526,7 @@ Final.results = [
         ],
         "url": "http://xivdb.com/item/5341/moko+grass",
         "icon": "https://secure.xivdb.com/img/game_local/5/5341.jpg",
-        "description": "A common grass found growing throughout Aldenard.<br><br>From its stalks, hempen yarn is created."
+        "description": "A common grass found growing throughout Aldenard.  From its stalks, hempen yarn is created."
     },
     {
         "name": "Moor Leech",
@@ -23565,7 +23565,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/5559/moor+leech",
         "icon": "https://secure.xivdb.com/img/game_local/5/5559.jpg",
-        "description": "A bloodsucking leech.<br><br>Used by barbers, chirurgeons, and chymists alike to drain the tainted humours from an ill patient."
+        "description": "A bloodsucking leech.  Used by barbers, chirurgeons, and chymists alike to drain the tainted humours from an ill patient."
     },
     {
         "name": "Morbol Vine",
@@ -24507,7 +24507,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/6145/noble+grapes",
         "icon": "https://secure.xivdb.com/img/game_local/6/6145.jpg",
-        "description": "Lowland grapes crossbred over generations to produce maximum sweetness.<br><br>Their bitter skin makes them unsuitable for eating off the vine, and they are better consumed as juice or wine."
+        "description": "Lowland grapes crossbred over generations to produce maximum sweetness.  Their bitter skin makes them unsuitable for eating off the vine, and they are better consumed as juice or wine."
     },
     {
         "name": "Nutmeg",
@@ -24546,7 +24546,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/4844/nutmeg",
         "icon": "https://secure.xivdb.com/img/game_local/4/4844.jpg",
-        "description": "A sweet-smelling seed that is ground into a powder and used to flavor pastries and tea.<br><br>It is also widely used in Far Eastern medicines."
+        "description": "A sweet-smelling seed that is ground into a powder and used to flavor pastries and tea.  It is also widely used in Far Eastern medicines."
     },
     {
         "name": "Oak Branch",
@@ -26738,7 +26738,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/5550/puk+wing",
         "icon": "https://secure.xivdb.com/img/game_local/5/5550.jpg",
-        "description": "The membranous wing of a puk.<br><br>Often carried by young Lalafellin girls as a good-luck charm."
+        "description": "The membranous wing of a puk.  Often carried by young Lalafellin girls as a good-luck charm."
     },
     {
         "name": "Pumice",
@@ -26777,7 +26777,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/9519/pumice",
         "icon": "https://secure.xivdb.com/img/game_local/9/9519.jpg",
-        "description": "Volcanic rock riddled with countless tiny holes which make the stone remarkably lighter than it appears.<br><br>Parchment makers rub the pieces on vellum to prepare the pages for receiving ink."
+        "description": "Volcanic rock riddled with countless tiny holes which make the stone remarkably lighter than it appears.  Parchment makers rub the pieces on vellum to prepare the pages for receiving ink."
     },
     {
         "name": "Purple Pigment",
@@ -29197,7 +29197,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/12945/red+alumen",
         "icon": "https://secure.xivdb.com/img/game_local/1/12945.jpg",
-        "description": "A reddish variety of the mineral used by leatherworkers to tan animal hides.<br><br>It lacks the deodorizing properties of its lighter counterpart."
+        "description": "A reddish variety of the mineral used by leatherworkers to tan animal hides.  It lacks the deodorizing properties of its lighter counterpart."
     },
     {
         "name": "Red Landtrap Leaf",
@@ -29669,7 +29669,7 @@ Final.results = [
         ],
         "url": "http://xivdb.com/item/5518/rock+salt",
         "icon": "https://secure.xivdb.com/img/game_local/5/5518.jpg",
-        "description": "A large chunk of naturally occurring salt crystals.<br><br>It is often ground into fine grains before being used to flavor and preserve food."
+        "description": "A large chunk of naturally occurring salt crystals.  It is often ground into fine grains before being used to flavor and preserve food."
     },
     {
         "name": "Rolanberry",
@@ -30087,7 +30087,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/12642/rue",
         "icon": "https://secure.xivdb.com/img/game_local/1/12642.jpg",
-        "description": "A low-growing shrub recognizable by its tiny yellow flowers and faint odor.<br><br>The leaves contain a mild irritant that, when rubbed against the skin, may cause minor reddening and swelling."
+        "description": "A low-growing shrub recognizable by its tiny yellow flowers and faint odor.  The leaves contain a mild irritant that, when rubbed against the skin, may cause minor reddening and swelling."
     },
     {
         "name": "Rye",
@@ -30194,7 +30194,7 @@ Final.results = [
         ],
         "url": "http://xivdb.com/item/4845/sagolii+sage",
         "icon": "https://secure.xivdb.com/img/game_local/4/4845.jpg",
-        "description": "A savory herb often found growing in parched desert environments.<br><br>It is used in cooking and various medicinal ointments and unguents."
+        "description": "A savory herb often found growing in parched desert environments.  It is used in cooking and various medicinal ointments and unguents."
     },
     {
         "name": "Salt Leek",
@@ -30846,7 +30846,7 @@ Final.results = [
         ],
         "url": "http://xivdb.com/item/5493/scalekin+blood",
         "icon": "https://secure.xivdb.com/img/game_local/5/5493.jpg",
-        "description": "The cold blood of a scaled creature.<br><br>For some unknown reason, the humours will not coagulate."
+        "description": "The cold blood of a scaled creature.  For some unknown reason, the humours will not coagulate."
     },
     {
         "name": "Scarlet Sap",
@@ -31767,7 +31767,7 @@ Final.results = [
         ],
         "url": "http://xivdb.com/item/5433/soiled+femur",
         "icon": "https://secure.xivdb.com/img/game_local/5/5433.jpg",
-        "description": "The dirty bone of a large beast.<br><br>It appears to have been gnawed on."
+        "description": "The dirty bone of a large beast.  It appears to have been gnawed on."
     },
     {
         "name": "Spoken Blood",
@@ -31849,7 +31849,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/5494/spoken+blood",
         "icon": "https://secure.xivdb.com/img/game_local/5/5494.jpg",
-        "description": "The warm blood of a bipedal sentient.<br><br>For some unknown reason, the humours will not coagulate."
+        "description": "The warm blood of a bipedal sentient.  For some unknown reason, the humours will not coagulate."
     },
     {
         "name": "Sprig of Mist Dill",
@@ -31888,7 +31888,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/12883/sprig+of+mist+dill",
         "icon": "https://secure.xivdb.com/img/game_local/1/12883.jpg",
-        "description": "A fragrant herb characterized by its thin leaves.<br><br>It is used in both medicines and culinary dishes."
+        "description": "A fragrant herb characterized by its thin leaves.  It is used in both medicines and culinary dishes."
     },
     {
         "name": "Spruce Log",
@@ -31966,7 +31966,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/12598/stalk+of+ramie",
         "icon": "https://secure.xivdb.com/img/game_local/1/12598.jpg",
-        "description": "A variety of swift-growing grass native to the Near East.<br><br>The stalks can be dried and processed into thin threads which, when spun together, can be woven into a cloth not unlike hemp."
+        "description": "A variety of swift-growing grass native to the Near East.  The stalks can be dried and processed into thin threads which, when spun together, can be woven into a cloth not unlike hemp."
     },
     {
         "name": "Star Anise",
@@ -32170,7 +32170,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/4819/sticky+rice",
         "icon": "https://secure.xivdb.com/img/game_local/4/4819.jpg",
-        "description": "This grain is imported from a land far to the east.<br><br>When cooked, it has a consistency slightly more glutinous than normal rice."
+        "description": "This grain is imported from a land far to the east.  When cooked, it has a consistency slightly more glutinous than normal rice."
     },
     {
         "name": "Straw",
@@ -32445,7 +32445,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/5465/sunrise+tellin",
         "icon": "https://secure.xivdb.com/img/game_local/5/5465.jpg",
-        "description": "A tiny bivalved mollusk commonly harvested on the Pearl.<br><br>Its pink shells are prized by goldsmiths who craft them into beautiful jewelry."
+        "description": "A tiny bivalved mollusk commonly harvested on the Pearl.  Its pink shells are prized by goldsmiths who craft them into beautiful jewelry."
     },
     {
         "name": "Sunset Wheat",
@@ -32962,7 +32962,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/5537/thavnairian+mistletoe",
         "icon": "https://secure.xivdb.com/img/game_local/5/5537.jpg",
-        "description": "A variety of parasitic plant that is commonly found growing on the stout acacia trees of Thavnair.<br><br>The inhabitants of Thavnair's capital city of Radz-at-Han have a strange custom that states if two people meet underneath a sprig of mistletoe, they must each give the other one of their shoes."
+        "description": "A variety of parasitic plant that is commonly found growing on the stout acacia trees of Thavnair.  The inhabitants of Thavnair's capital city of Radz-at-Han have a strange custom that states if two people meet underneath a sprig of mistletoe, they must each give the other one of their shoes."
     },
     {
         "name": "Throne Gem",
@@ -34036,7 +34036,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/4833/vanilla+beans",
         "icon": "https://secure.xivdb.com/img/game_local/4/4833.jpg",
-        "description": "A sweet-smelling spice made from the dried pod of the rare vanilla plant.<br><br>It is often used in the making confectionaries as well as medicines."
+        "description": "A sweet-smelling spice made from the dried pod of the rare vanilla plant.  It is often used in the making confectionaries as well as medicines."
     },
     {
         "name": "Violet Quartz",
@@ -34807,7 +34807,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/6154/voidsent+blood",
         "icon": "https://secure.xivdb.com/img/game_local/6/6154.jpg",
-        "description": "The bubbling blood of a voidsent.<br><br>For some unknown reason, the humours will not coagulate."
+        "description": "The bubbling blood of a voidsent.  For some unknown reason, the humours will not coagulate."
     },
     {
         "name": "Volcanic Rock Salt",
@@ -35151,7 +35151,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/4798/white+truffle",
         "icon": "https://secure.xivdb.com/img/game_local/4/4798.jpg",
-        "description": "A rare white mushroom that grows in the soil, rather than above it, making the specimen almost impossible to locate.<br><br>It is treasured as a delicacy for its unique aroma."
+        "description": "A rare white mushroom that grows in the soil, rather than above it, making the specimen almost impossible to locate.  It is treasured as a delicacy for its unique aroma."
     },
     {
         "name": "Wildfowl Feather",
@@ -35638,7 +35638,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/5127/wyrm+obsidian",
         "icon": "https://secure.xivdb.com/img/game_local/5/5127.jpg",
-        "description": "Obsidian of legendary quality.<br><br>Said to have been formed in the flames of a wyrm's breath and possess magical qualities."
+        "description": "Obsidian of legendary quality.  Said to have been formed in the flames of a wyrm's breath and possess magical qualities."
     },
     {
         "name": "Wyvern Obsidian",
@@ -35677,7 +35677,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/5125/wyvern+obsidian",
         "icon": "https://secure.xivdb.com/img/game_local/5/5125.jpg",
-        "description": "A hard variety of obsidian.<br><br>Said to have been formed in the flames of a wyvern's breath."
+        "description": "A hard variety of obsidian.  Said to have been formed in the flames of a wyvern's breath."
     },
     {
         "name": "Wyvern Skin",
@@ -36371,7 +36371,7 @@ Final.results = [
         "shops": "",
         "url": "http://xivdb.com/item/12575/yeti+fang",
         "icon": "https://secure.xivdb.com/img/game_local/1/12575.jpg",
-        "description": "The curved canine of a Coerthan yeti.<br><br>You shudder to think how many throats were ripped open by this nail-like tooth."
+        "description": "The curved canine of a Coerthan yeti.  You shudder to think how many throats were ripped open by this nail-like tooth."
     },
     {
         "name": "Yew Branch",
