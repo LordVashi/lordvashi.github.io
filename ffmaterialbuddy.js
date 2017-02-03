@@ -9,20 +9,28 @@ class FFMaterialBuddy {
         this.main = $("#MainTextArea");
         this.selector = $("#LocationSelector");
         this.populateSelector();
-        this.selector.change(() => this.update());
+        this.selector.keypress((e) => {
+            if (e.keyCode == 13) {
+                (this.selector).autocomplete('close');
+                this.update();
+            }
+        });
     }
     populateSelector() {
-        for (var map of Locations.map) {
-            if ((map).map != "") {
-                this.selector.append($('<option/>', {
-                    text: (map).map
-                }));
-            }
-        }
+        (this.selector).autocomplete({
+            minLength: 1,
+            source: Locations.map.filter(map => map.map != "").map(map => map.map),
+            select: () => this.update(),
+            appendTo: "#AutoComplete"
+        });
     }
     update() {
-        var selected = $("#LocationSelector option:selected").text();
-        var index = Locations.map.findIndex((loc) => loc.map == selected);
+        var selected = ($("#LocationSelector")[0]).value.toLowerCase();
+        if (selected == "")
+            return;
+        var index = Locations.map.findIndex((loc) => loc.map.toLowerCase() == selected);
+        if (index == -1)
+            return;
         var ids = Locations.map[index].ids;
         var itemsRaw = Final.results.filter((item) => ids.indexOf(item.id) != -1);
         this.main.empty();
@@ -30,16 +38,19 @@ class FFMaterialBuddy {
         $(".expandedBlock").css({ height: 0 });
         var enabled = $(".enemyButton.enabled");
         enabled.click(element => {
-            var expandBlock = $(element.target).closest(".itemBlock").children(".expandedBlock.enemies");
+            var clicked = $(element.target);
+            var expandBlock = clicked.closest(".itemBlock").children(".expandedBlock.enemies");
             if (expandBlock.hasClass("open")) {
                 expandBlock.animate({ height: 0 }, 300, () => {
                     expandBlock.animate({ opacity: 0 }, 50);
+                    clicked.text("Enemy +");
                     expandBlock.removeClass("open");
                 });
             }
             else {
                 expandBlock.addClass("open");
                 expandBlock.animate({ opacity: 1 }, 50, () => expandBlock.animate({ height: expandBlock.get(0).scrollHeight }, 400, () => {
+                    clicked.text("Enemy -");
                     expandBlock.children(".enemyblock").animate({ opacity: 1 });
                 }));
             }
@@ -63,7 +74,7 @@ class FFMaterialBuddy {
         if (item.enemies != "") {
             var enemiesDiv = htmlblock.find(".enemies");
             for (var enemy of item.enemies) {
-                if (enemy.map && enemy.map.mapname == selected) {
+                if (enemy.map && enemy.map.mapname.toLowerCase() == selected) {
                     enemiesDiv.append($("<div/>", { class: 'enemyblock' })
                         .append($("<span/>", { class: "enemyName", text: enemy.name }))
                         .append($("<span/>", { class: "enemyLevel", text: (enemy.maxlevel == enemy.minlevel)

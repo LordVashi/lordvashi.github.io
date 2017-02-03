@@ -9,8 +9,9 @@ body {
 }
 
 #AppMain {
-  margin-left: 10%;
-  margin-right: 10%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 40px;
@@ -18,6 +19,9 @@ body {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   background-color: #222;
   color: #EED;
+  min-width: 448px;
+  min-height: 100%;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -36,11 +40,17 @@ h3 {
   height: 32px;
   width: 100%;
   padding: 4px;
+  padding-left: 12px;
   outline: none;
   background-color: #111;
   color: #EEE;
   border-radius: 6px;
   border-color: #555;
+  box-sizing: border-box;
+}
+
+#LocationSelector:hover {
+  background-color: #161616;
 }
 
 .itemBlock {
@@ -53,13 +63,14 @@ h3 {
   min-width: 400px;
   vertical-align: middle;
   display: inline-block;
-  width: 93%;
+  width: 100%;
   background-color: #131313;
   padding-left: 3%;
   padding-right: 3%;
   border-style: ridge;
   border-radius: 8px;
   border-color: #555;
+  box-sizing: border-box;
 }
 
 .icon {
@@ -103,9 +114,11 @@ h3 {
 .expandButtons span {
   border: 2px ridge #555;
   border-radius: 10px;
-  margin-left: 32px;
+  margin-left: 8%;
   font-size: 13px;
   padding: 0px 6px 0px 6px;
+  display: inline-block;
+  white-space: nowrap;
 }
 
 .expandButtons span.disabled {
@@ -122,7 +135,7 @@ h3 {
   border-bottom-style: ridge;
   border-color: #555;
   margin-left: 16px;
-  margin-right: 8px;
+  margin-right: 16px;
   background-color: #131313;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
@@ -146,4 +159,43 @@ h3 {
 
 .enemyblock .enemyLevel {
   white-space:nowrap;
+}
+
+.ui-autocomplete {
+    max-height: 200px;
+    left: 6% !important;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-top-style: none;
+    border-left-style: ridge;
+    border-right-style: ridge;
+    border-bottom-style: ridge;
+    border-color: #555;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    width: 92% !important;
+    box-sizing: border-box;
+    padding-left: 0;
+  }
+
+.ui-menu li {
+  list-style: none;
+}
+
+.ui-menu .ui-menu-item div {
+  background: #131313;
+  padding: 6px;
+  font-size: 12px;
+  color: #EED;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.ui-menu .ui-menu-item .ui-state-active {
+  background: #333;
+}
+
+.ui-helper-hidden-accessible {
+  display: none;
 }
