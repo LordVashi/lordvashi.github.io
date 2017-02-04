@@ -157,7 +157,7 @@ h3 {
 }
 
 .expand .enemyName {
-  width: 40%;
+  width: 20%;
 }
 
 .expand .nodeLevel {
@@ -165,7 +165,7 @@ h3 {
 }
 
 .expand .gatheringLevel {
-  width: 40%;
+  width: 35%;
 }
 
 .ui-autocomplete {
