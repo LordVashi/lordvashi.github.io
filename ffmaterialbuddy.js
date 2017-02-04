@@ -36,25 +36,30 @@ class FFMaterialBuddy {
         this.main.empty();
         var prettyItems = itemsRaw.map(item => this.formHTML(selected, item)).reduce((total, add) => total.append(add), this.main);
         $(".expandedBlock").css({ height: 0 });
-        var enabled = $(".enemyButton.enabled");
-        enabled.click(element => {
-            var clicked = $(element.target);
-            var expandBlock = clicked.closest(".itemBlock").children(".expandedBlock.enemies");
-            if (expandBlock.hasClass("open")) {
-                expandBlock.animate({ height: 0 }, 300, () => {
-                    expandBlock.animate({ opacity: 0 }, 50);
-                    clicked.text("Enemy +");
-                    expandBlock.removeClass("open");
-                });
-            }
-            else {
-                expandBlock.addClass("open");
-                expandBlock.animate({ opacity: 1 }, 50, () => expandBlock.animate({ height: expandBlock.get(0).scrollHeight }, 400, () => {
-                    clicked.text("Enemy -");
-                    expandBlock.children(".enemyblock").animate({ opacity: 1 });
-                }));
-            }
-        });
+        $(".enemyButton.enabled").text("Enemy +");
+        $(".miningButton.enabled").text("Mining +");
+        $(".botanyButton.enabled").text("Botany +");
+        $(".enemyButton.enabled").click(element => this.expandClicked(element, "Enemy", "enemies"));
+        $(".miningButton.enabled").click(element => this.expandClicked(element, "Mining", "gathering"));
+        $(".botanyButton.enabled").click(element => this.expandClicked(element, "Botany", "gathering"));
+    }
+    expandClicked(element, type, classname) {
+        var clicked = $(element.target);
+        var expandBlock = clicked.closest(".itemBlock").children(".expandedBlock." + classname);
+        if (expandBlock.hasClass("open")) {
+            expandBlock.animate({ height: 0 }, 300, () => {
+                expandBlock.animate({ opacity: 0 }, 50);
+                clicked.text(type + " +");
+                expandBlock.removeClass("open");
+            });
+        }
+        else {
+            expandBlock.addClass("open");
+            expandBlock.animate({ opacity: 1 }, 50, () => expandBlock.animate({ height: expandBlock.get(0).scrollHeight }, 400, () => {
+                clicked.text(type + " -");
+                expandBlock.children("." + classname + "block").animate({ opacity: 1 });
+            }));
+        }
     }
     formHTML(selected, item) {
         var htmlblock = $("<div/>", { class: 'itemBlock', id: item.id })
@@ -67,19 +72,35 @@ class FFMaterialBuddy {
             .append($("<p/>", { text: item.description }))
             .append($("<div/>", { class: "expandButtons" })
             .append($("<span/>", { text: "Mining", class: "miningButton " + (item.gathering != "" && (item.gathering[0].type == "Mining" || item.gathering[0].type == "Quarrying") ? "enabled" : "disabled") }))
-            .append($("<span/>", { text: "Botany", class: "gatheringButton " + (item.gathering != "" && (item.gathering[0].type == "Harvesting" || item.gathering[0].type == "Logging") ? "enabled" : "disabled") }))
-            .append($("<span/>", { text: "Enemy +", class: "enemyButton " + (item.enemies != "" ? "enabled" : "disabled") }))))))
+            .append($("<span/>", { text: "Botany", class: "botanyButton " + (item.gathering != "" && (item.gathering[0].type == "Harvesting" || item.gathering[0].type == "Logging") ? "enabled" : "disabled") }))
+            .append($("<span/>", { text: "Enemy", class: "enemyButton " + (item.enemies != "" ? "enabled" : "disabled") }))))))
             .append($("<div/>", { class: 'expandedBlock enemies' }))
             .append($("<div/>", { class: 'expandedBlock gathering' }));
         if (item.enemies != "") {
             var enemiesDiv = htmlblock.find(".enemies");
             for (var enemy of item.enemies) {
                 if (enemy.map && enemy.map.mapname.toLowerCase() == selected) {
-                    enemiesDiv.append($("<div/>", { class: 'enemyblock' })
+                    enemiesDiv.append($("<div/>", { class: 'enemiesblock expand' })
                         .append($("<span/>", { class: "enemyName", text: enemy.name }))
                         .append($("<span/>", { class: "enemyLevel", text: (enemy.maxlevel == enemy.minlevel)
                             ? "Level: " + enemy.minlevel
                             : "Level Range: " + enemy.minlevel + " - " + enemy.maxlevel })));
+                }
+            }
+        }
+        if (item.gathering != "") {
+            var mining = (item.gathering[0].type == "Mining" || item.gathering[0].type == "Quarrying");
+            var gatheringDiv = htmlblock.find(".gathering");
+            var gathering = item.gathering[0];
+            for (var node of gathering.node) {
+                if (node.mapname && node.mapname.toLowerCase() == selected) {
+                    var stars = Array.from(Array(gathering.stars).keys()).reduce((total, current) => total + "★", "");
+                    var block = $("<div/>", { class: 'gatheringblock expand' }).appendTo(gatheringDiv);
+                    block.append($("<span/>", { class: "nodeLevel", text: "Node: " + node.level }))
+                        .append($("<span/>", { class: "gatheringLevel", text: "Gathering: " + gathering.glevel + stars }));
+                    if (gathering.placename != "") {
+                        block.append($("<span/>", { class: "gatherLocation", text: "Location: " + gathering.placename }));
+                    }
                 }
             }
         }
