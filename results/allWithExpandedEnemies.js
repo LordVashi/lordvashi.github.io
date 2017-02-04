@@ -5401,50 +5401,6 @@ Final.results = [
     "description": "A beautiful flower common in Aldenard from which a potent sleeping poison can be extracted."
   },
   {
-    "name": "Biast Scales",
-    "id": 5448,
-    "api": "https://api.xivdb.com/item/5448",
-    "sourceType": "enemy",
-    "gathering": "",
-    "enemies": [
-      {
-        "name": "Mists Biast",
-        "id": 3627,
-        "api": "https://api.xivdb.com/enemy/3627",
-        "maxlevel": 55,
-        "minlevel": 55,
-        "map": {
-          "mapid": 2002,
-          "mapname": "The Churning Mists",
-          "map": [
-            {
-              "folder": "d2f3/00",
-              "hierarchy": 1,
-              "id": 214,
-              "map_marker_range": 164,
-              "offset_x": 0,
-              "offset_y": 0,
-              "patch": 0,
-              "path": "d2f3/d2f3.00.png",
-              "placename": 2002,
-              "region": 498,
-              "size_factor": 95,
-              "territory_id": 400,
-              "url": "/maps#2002/the+churning+mists",
-              "zone": 0
-            }
-          ],
-          "type": "map"
-        }
-      }
-    ],
-    "recepies": "",
-    "shops": "",
-    "url": "http://xivdb.com/item/5448/biast+scales",
-    "icon": "https://secure.xivdb.com/img/game_local/5/5448.jpg",
-    "description": "The blue-brown scales of a biast."
-  },
-  {
     "name": "Birch Branch",
     "id": 12586,
     "api": "https://api.xivdb.com/item/12586",
@@ -5594,50 +5550,6 @@ Final.results = [
     "url": "http://xivdb.com/item/5541/belladonna",
     "icon": "https://secure.xivdb.com/img/game_local/5/5541.jpg",
     "description": "A beautiful flower common in Aldenard from which a potent sleeping poison can be extracted."
-  },
-  {
-    "name": "Biast Scales",
-    "id": 5448,
-    "api": "https://api.xivdb.com/item/5448",
-    "sourceType": "enemy",
-    "gathering": "",
-    "enemies": [
-      {
-        "name": "Mists Biast",
-        "id": 3627,
-        "api": "https://api.xivdb.com/enemy/3627",
-        "maxlevel": 55,
-        "minlevel": 55,
-        "map": {
-          "mapid": 2002,
-          "mapname": "The Churning Mists",
-          "map": [
-            {
-              "folder": "d2f3/00",
-              "hierarchy": 1,
-              "id": 214,
-              "map_marker_range": 164,
-              "offset_x": 0,
-              "offset_y": 0,
-              "patch": 0,
-              "path": "d2f3/d2f3.00.png",
-              "placename": 2002,
-              "region": 498,
-              "size_factor": 95,
-              "territory_id": 400,
-              "url": "/maps#2002/the+churning+mists",
-              "zone": 0
-            }
-          ],
-          "type": "map"
-        }
-      }
-    ],
-    "recepies": "",
-    "shops": "",
-    "url": "http://xivdb.com/item/5448/biast+scales",
-    "icon": "https://secure.xivdb.com/img/game_local/5/5448.jpg",
-    "description": "The blue-brown scales of a biast."
   },
   {
     "name": "Birch Branch",
