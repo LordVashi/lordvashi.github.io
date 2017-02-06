@@ -18,7 +18,7 @@ class FFMaterialBuddy {
     }
     populateSelector() {
         (this.selector).autocomplete({
-            minLength: 1,
+            minLength: 2,
             source: Locations.map.filter(map => map.map != "").map(map => map.map),
             select: () => this.update(),
             appendTo: "#AutoComplete"
@@ -63,7 +63,7 @@ class FFMaterialBuddy {
     }
     formHTML(selected, item) {
         var htmlblock = $("<div/>", { class: 'itemBlock', id: item.id })
-            .append($("<div/>", { class: 'unexpandedBlock' })
+            .append($("<div/>", { class: 'unexpandedBlock secondaryColor bordered' })
             .append($("<span/>", { class: 'infoArea' })
             .append($("<div/>", { class: 'icon' })
             .append($("<img/>", { src: item.icon })))
@@ -74,8 +74,8 @@ class FFMaterialBuddy {
             .append($("<span/>", { text: "Mining", class: "miningButton " + (item.gathering != "" && (item.gathering[0].type == "Mining" || item.gathering[0].type == "Quarrying") ? "enabled" : "disabled") }))
             .append($("<span/>", { text: "Botany", class: "botanyButton " + (item.gathering != "" && (item.gathering[0].type == "Harvesting" || item.gathering[0].type == "Logging") ? "enabled" : "disabled") }))
             .append($("<span/>", { text: "Enemy", class: "enemyButton " + (item.enemies != "" ? "enabled" : "disabled") }))))))
-            .append($("<div/>", { class: 'expandedBlock enemies' }))
-            .append($("<div/>", { class: 'expandedBlock gathering' }));
+            .append($("<div/>", { class: 'expandedBlock enemies secondaryColor bordered' }))
+            .append($("<div/>", { class: 'expandedBlock gathering secondaryColor bordered' }));
         if (item.enemies != "") {
             var enemiesDiv = htmlblock.find(".enemies");
             for (var enemy of item.enemies) {

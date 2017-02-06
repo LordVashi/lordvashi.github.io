@@ -1,9 +1,37 @@
+.primaryColor {
+  background-color: #121010;
+  color: #D0D0B6;
+}
+
+.secondaryColor {
+  background-color: #181616;
+  color: #D0D0B6;
+}
+
+.bordered {
+  border-radius: 6px;
+  border-color: #544;
+  border-style: groove;
+}
+
+::-webkit-input-placeholder {
+   color: #B0B096;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #B0B096;
+}
+
+:-ms-input-placeholder {
+   color: #B0B096;
+}
+
 html {
   height: 100%;
 }
 
 body {
-  background-color: #111;
+  background-color: #181616;
   margin: 0;
   height: 100%;
 }
@@ -17,16 +45,19 @@ body {
   padding-top: 40px;
   padding-bottom: 80px;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
-  background-color: #222;
-  color: #EED;
   min-width: 448px;
   min-height: 100%;
   box-sizing: border-box;
 }
 
+#Heading img {
+  vertical-align: bottom;
+}
+
 h1 {
   margin: 2px;
   letter-spacing: 3px;
+  display: inline-block;
 }
 
 h3 {
@@ -41,35 +72,27 @@ h3 {
   width: 100%;
   padding: 4px;
   padding-left: 12px;
+  margin-bottom: 12px;
   outline: none;
-  background-color: #111;
-  color: #EEE;
-  border-radius: 6px;
-  border-color: #555;
   box-sizing: border-box;
 }
 
 #LocationSelector:hover {
-  background-color: #161616;
+  background-color: #181616;
 }
 
 .itemBlock {
-  margin-top: 16px;
+  margin-top: 8px;
 }
 
 .unexpandedBlock {
   height: auto;
-  min-height: 96px;
   min-width: 400px;
   vertical-align: middle;
   display: inline-block;
   width: 100%;
-  background-color: #131313;
   padding-left: 3%;
   padding-right: 3%;
-  border-style: ridge;
-  border-radius: 8px;
-  border-color: #555;
   box-sizing: border-box;
 }
 
@@ -83,15 +106,15 @@ h3 {
 .icon img {
   width: 64px;
   height: 64px;
-  outline: 4px ridge #777;
+  outline: 4px ridge #544;
   outline-offset: -2px;
 }
 
 .text {
   display: inline-block;
   vertical-align: middle;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 4px;
+  margin-bottom: 4px;
   margin-left: 40px;
   width: 70%;
 }
@@ -108,11 +131,11 @@ h3 {
   margin-left: 16px;
   margin-top: 8px;
   margin-bottom: 10px;
-  color: #808086;
+  color: #A09696;
 }
 
 .expandButtons span {
-  border: 2px ridge #555;
+  border: 2px groove #544;
   border-radius: 10px;
   margin-left: 8%;
   font-size: 13px;
@@ -122,21 +145,19 @@ h3 {
 }
 
 .expandButtons span.disabled {
-  color: #666;
+  color: #626060;
 }
 
 .expandedBlock {
   opacity: 0;
   overflow: hidden;
   height: 0;
-  border-top-style: none;
-  border-left-style: ridge;
-  border-right-style: ridge;
-  border-bottom-style: ridge;
-  border-color: #555;
   margin-left: 16px;
   margin-right: 16px;
-  background-color: #131313;
+}
+
+.bordered.expandedBlock {
+  border-top-style: none;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
   border-bottom-right-radius: 4px;
@@ -170,19 +191,19 @@ h3 {
 
 .ui-autocomplete {
     max-height: 200px;
-    left: 6% !important;
+    left: 2% !important;
     overflow-y: auto;
     overflow-x: hidden;
     border-top-style: none;
-    border-left-style: ridge;
-    border-right-style: ridge;
-    border-bottom-style: ridge;
-    border-color: #555;
+    border-left-style: groove;
+    border-right-style: groove;
+    border-bottom-style: groove;
+    border-color: #544;
     border-top-right-radius: 0;
     border-top-left-radius: 0;
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
-    width: 92% !important;
+    width: 96% !important;
     box-sizing: border-box;
     padding-left: 0;
   }
@@ -192,15 +213,15 @@ h3 {
 }
 
 .ui-menu .ui-menu-item div {
-  background: #131313;
+  background: #121010;
   padding: 6px;
   font-size: 12px;
-  color: #EED;
+  color: #D0D0B6;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 .ui-menu .ui-menu-item .ui-state-active {
-  background: #333;
+  background: #282626;
 }
 
 .ui-helper-hidden-accessible {
