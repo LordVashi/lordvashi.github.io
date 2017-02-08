@@ -43,11 +43,12 @@ class FFMaterialBuddy {
         for (var item of this.searchList) {
             listElement.append($("<div/>", { class: "listElement" })
                 .append($("<span/>", { class: "listElementText", text: item }))
-                .append($("<span/>", { class: "listElementClose fa fa-remove", item: item })));
+                .append($("<span/>", { class: "listElementClose fa fa-remove", "data-item": item })));
         }
-        $(".listElementClose").click((e) => this.removeFromList(($(e)[0]).item));
+        $(".listElementClose").click((e) => this.removeFromList(e));
     }
-    removeFromList(item) {
+    removeFromList(event) {
+        var item = $(event.target).data("item");
         var i = this.searchList.indexOf(item);
         this.searchList.splice(i, 1);
         this.updateSearchList();
