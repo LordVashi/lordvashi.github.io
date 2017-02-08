@@ -7,6 +7,7 @@
     <script src='results/locationMap.js'></script>
     <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="main.css">
 
     <link rel="icon" type="image/png" href="favicon-32.png" sizes="32x32" />
@@ -19,8 +20,12 @@
   <div id="AppMain" class="primaryColor bordered">
     <span id="Heading"><h1> FF Material Buddy </h1><img src="materialmoog.png"></span>
     <h3> What do we have here? </h3>
-    <input id ='LocationSelector' class="secondaryColor bordered" type='text' placeholder="Zone Name"></input>
+    <span id="SelectionBar" class="secondaryColor bordered">
+      <input id ='LocationSelector' class="secondaryColor" type='text' placeholder="Zone Name"></input>
+      <i class="addList fa fa-plus-square fa-2x" aria-hidden="true"></i>
+    </span>
     <div id="AutoComplete"></div>
+    <div id="SearchList"></div>
     <div id="MainTextArea"></div>
   </div>
 </body>
