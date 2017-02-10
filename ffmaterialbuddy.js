@@ -103,17 +103,19 @@ class FFMaterialBuddy {
             expandBlock.animate({ opacity: 1 }, 50, () => expandBlock.animate({ height: expandBlock.get(0).scrollHeight }, 400, () => {
                 clicked.text(type + " -");
                 expandBlock.children("." + classname + "block").animate({ opacity: 1 });
+                expandBlock.css({ height: "auto" });
             }));
         }
     }
     formHTML(selected, item) {
+        var zones = [];
         var htmlblock = $("<div/>", { class: 'itemBlock', id: item.id })
             .append($("<div/>", { class: 'unexpandedBlock secondaryColor bordered' })
             .append($("<span/>", { class: 'infoArea' })
             .append($("<div/>", { class: 'icon' })
             .append($("<img/>", { src: item.icon })))
             .append($("<div/>", { class: 'text' })
-            .append($("<h2/>", { text: item.name }))
+            .append($("<h2/>", { text: item.name, class: "itemName" }))
             .append($("<p/>", { text: item.description }))
             .append($("<div/>", { class: "expandButtons" })
             .append($("<span/>", { text: "Mining", class: "miningButton " + (item.gathering != "" && (item.gathering[0].type == "Mining" || item.gathering[0].type == "Quarrying") ? "enabled" : "disabled") }))
@@ -125,6 +127,8 @@ class FFMaterialBuddy {
             var enemiesDiv = htmlblock.find(".enemies");
             for (var enemy of item.enemies) {
                 if (enemy.map && (enemy.map.mapname.toLowerCase() == selected || this.searchList.indexOf(enemy.map.mapname.toLowerCase()) != -1)) {
+                    if (zones.indexOf(enemy.map.mapname.toLowerCase()) == -1)
+                        zones.push(enemy.map.mapname.toLowerCase());
                     enemiesDiv.append($("<div/>", { class: 'enemiesblock expand' })
                         .append($("<span/>", { class: "enemyName", text: enemy.name }))
                         .append($("<span/>", { class: "enemyLevel", text: (enemy.maxlevel == enemy.minlevel)
@@ -139,6 +143,8 @@ class FFMaterialBuddy {
             var gathering = item.gathering[0];
             for (var node of gathering.node) {
                 if (node.mapname && (node.mapname.toLowerCase() == selected || this.searchList.indexOf(node.mapname.toLowerCase()) != -1)) {
+                    if (zones.indexOf(node.mapname.toLowerCase()) == -1)
+                        zones.push(node.mapname.toLowerCase());
                     var stars = Array.from(Array(gathering.stars).keys()).reduce((total, current) => total + "★", "");
                     var block = $("<div/>", { class: 'gatheringblock expand' }).appendTo(gatheringDiv);
                     block.append($("<span/>", { class: "nodeLevel", text: "Node: " + node.level }))
@@ -148,6 +154,9 @@ class FFMaterialBuddy {
                     }
                 }
             }
+        }
+        if (this.searchList.length > 0 && zones.length > 0) {
+            htmlblock.find(".itemName").after($("<h2/>", { class: "zones", text: "Zones: " + zones.join(", ") }));
         }
         return htmlblock;
     }

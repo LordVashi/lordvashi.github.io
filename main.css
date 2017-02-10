@@ -48,6 +48,8 @@ body {
   min-width: 448px;
   min-height: 100%;
   box-sizing: border-box;
+
+  transition: all .5s;
 }
 
 #Heading img {
@@ -58,6 +60,8 @@ h1 {
   margin: 2px;
   letter-spacing: 3px;
   display: inline-block;
+
+  transition: all .5s;
 }
 
 h3 {
@@ -115,6 +119,8 @@ h3 {
 #SearchList .listElement .listElementClose {
   margin-left: 6px;
   color: #866;
+
+  transition: all .5s;
 }
 
 .itemBlock {
@@ -127,15 +133,22 @@ h3 {
   vertical-align: middle;
   display: inline-block;
   width: 100%;
-  padding-left: 3%;
-  padding-right: 3%;
   box-sizing: border-box;
+}
+
+.infoArea {
+  padding-top: 6px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: inline-block;
+  white-space: nowrap;
 }
 
 .icon {
   display: inline-block;
   vertical-align: middle;
-  width: 64px;
+  width: 96px;
   height: 64px;
 }
 
@@ -144,6 +157,7 @@ h3 {
   height: 64px;
   outline: 4px ridge #544;
   outline-offset: -2px;
+  margin-left: 16px;
 }
 
 .text {
@@ -151,23 +165,41 @@ h3 {
   vertical-align: middle;
   margin-top: 4px;
   margin-bottom: 4px;
-  margin-left: 40px;
-  width: 70%;
+  width: 85%;
+
+  transition: all .5s;
 }
 
 .text h2 {
-  text-transform: uppercase;
   font-size: 16px;
   margin-bottom: 4px;
   margin-top: 0px;
 }
 
+.text .itemName {
+  text-transform: uppercase;
+  display: inline-block;
+  min-width: 30%;
+  white-space: nowrap;
+  margin-right: 8px;
+}
+
+.text .zones {
+  font-size: 14px;
+  text-transform: capitalize;
+  display: inline-block;
+  color: #C0C0A6;
+
+  transition: all .5s;
+}
+
 .text p {
   font-size: 13px;
   margin-left: 16px;
-  margin-top: 8px;
-  margin-bottom: 10px;
+  margin-top: 6px;
+  margin-bottom: 8px;
   color: #A09696;
+  white-space: normal;
 }
 
 .expandButtons span {
@@ -214,7 +246,7 @@ h3 {
 }
 
 .expand .enemyName {
-  width: 20%;
+  width: 55%;
 }
 
 .expand .nodeLevel {
@@ -262,4 +294,86 @@ h3 {
 
 .ui-helper-hidden-accessible {
   display: none;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Styles */
+}
+
+@media only screen and (max-width : 480px) {
+  #AppMain {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  h1 {
+    margin-left: 36px;
+    font-size: 18px;
+  }
+
+  h3 {
+    margin-left: 60px;
+  }
+
+  .bordered {
+    border-radius: 0px !important;
+    border-left-style: none;
+    border-right-style: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  .text {
+    width: 73%;
+  }
+
+  .expand span {
+    display: block;
+  }
+
+/* All but first */
+  .expand span + span {
+    margin-left: 16px;
+  }
+
+  .expandedBlock {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 32px
+  }
+
+  .expandButtons span {
+    border-radius: 0px;
+    font-size: 16px;
+  }
+
+  #SearchList .listElement .listElementClose {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  .text .itemName {
+    display: block;
+  }
+
+  .text .zones {
+    width: 95%;
+    word-wrap: break-word;
+    white-space: normal;
+  }
+
+  .text {
+    width: 78%;
+  }
 }
