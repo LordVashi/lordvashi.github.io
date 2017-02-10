@@ -45,7 +45,6 @@ body {
   padding-top: 40px;
   padding-bottom: 80px;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
-  min-width: 448px;
   min-height: 100%;
   box-sizing: border-box;
 
@@ -69,6 +68,9 @@ h3 {
   margin-top: -6px;
   margin-bottom: 20px;
   font-size: 10pt;
+
+  transition: all .5s;
+
 }
 
 #SelectionBar {
@@ -92,6 +94,7 @@ h3 {
   box-sizing: border-box;
   border: none;
   vertical-align: middle;
+  font-size: 16px;
 }
 
 #LocationSelector:hover {
@@ -108,7 +111,7 @@ h3 {
 }
 
 #SearchList .listElement {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 #SearchList .listElement .listElementText {
@@ -129,7 +132,6 @@ h3 {
 
 .unexpandedBlock {
   height: auto;
-  min-width: 400px;
   vertical-align: middle;
   display: inline-block;
   width: 100%;
@@ -298,7 +300,18 @@ h3 {
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-/* Styles */
+  #AppMain {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    min-width: 320px;
+  }
+
+
+  h1 {
+    margin-left: 8px;
+    font-size: 16px;
+  }
 }
 
 @media only screen and (max-width : 480px) {
@@ -306,6 +319,7 @@ h3 {
     width: 100%;
     padding-left: 0;
     padding-right: 0;
+    min-width: 480px;
   }
 
   h1 {
@@ -321,6 +335,12 @@ h3 {
     border-radius: 0px !important;
     border-left-style: none;
     border-right-style: none;
+  }
+
+  .expandedBlock {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 32px
   }
 }
 
@@ -342,15 +362,10 @@ h3 {
     margin-left: 16px;
   }
 
-  .expandedBlock {
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-left: 32px
-  }
-
   .expandButtons span {
     border-radius: 0px;
     font-size: 16px;
+    margin-left: 3%;
   }
 
   #SearchList .listElement .listElementClose {
