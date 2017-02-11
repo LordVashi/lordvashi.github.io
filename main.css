@@ -54,6 +54,7 @@ body {
 
 #Heading img {
   vertical-align: bottom;
+  white-space: nowrap;
 }
 
 h1 {
