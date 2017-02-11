@@ -43,6 +43,7 @@ body {
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 40px;
+  min-width: 448;
   padding-bottom: 80px;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   min-height: 100%;
@@ -207,11 +208,16 @@ h3 {
 .expandButtons span {
   border: 2px groove #544;
   border-radius: 10px;
-  margin-left: 8%;
   font-size: 13px;
   padding: 0px 6px 0px 6px;
   display: inline-block;
   white-space: nowrap;
+
+  transition: all .5s;
+}
+
+.expandButtons span +span {
+    margin-left: 8%;
 }
 
 .expandButtons span.disabled {
@@ -298,49 +304,23 @@ h3 {
   display: none;
 }
 
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  #AppMain {
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-    min-width: 320px;
-  }
-
-
+@media only screen and (max-width: 900px) {
   h1 {
-    margin-left: 8px;
-    font-size: 16px;
-  }
-}
-
-@media only screen and (max-width : 480px) {
-  #AppMain {
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-    min-width: 480px;
+    font-size: 22px;
   }
 
-  h1 {
-    margin-left: 36px;
-    font-size: 18px;
+  .text .itemName {
+    display: block;
   }
 
-  h3 {
-    margin-left: 60px;
+  .text .zones {
+    width: 95%;
+    word-wrap: break-word;
+    white-space: normal;
   }
 
-  .bordered {
-    border-radius: 0px !important;
-    border-left-style: none;
-    border-right-style: none;
-  }
-
-  .expandedBlock {
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-left: 32px
+  .text {
+    width: 78%;
   }
 }
 
@@ -365,6 +345,9 @@ h3 {
   .expandButtons span {
     border-radius: 0px;
     font-size: 16px;
+  }
+
+  .expandButtons span + span {
     margin-left: 3%;
   }
 
@@ -373,22 +356,58 @@ h3 {
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width : 480px) {
+  #AppMain {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    min-width: 480px;
+  }
+
   h1 {
-    font-size: 22px;
+    margin-left: 32px;
+    font-size: 20px;
   }
 
-  .text .itemName {
-    display: block;
+  h3 {
+    margin-left: 60px;
   }
 
-  .text .zones {
-    width: 95%;
-    word-wrap: break-word;
-    white-space: normal;
+  .bordered {
+    border-radius: 0px !important;
+    border-left-style: none;
+    border-right-style: none;
+  }
+
+  .expandedBlock {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 8px
+  }
+}
+
+@media only screen and (max-width : 320px) {
+  #AppMain {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    min-width: 320px;
   }
 
   .text {
-    width: 78%;
+    width: 65%;
+  }
+
+  .text p {
+    margin-left: 8px;
+  }
+
+  .expandButtons span + span {
+    margin-left: 2%;
+  }
+
+  h1 {
+    margin-left: 16px;
+    font-size: 18px;
   }
 }
