@@ -1,11 +1,13 @@
 class FFMaterialBuddy {
     constructor() {
+        this.activeFilters = [];
         this.itemLocationMap = [];
         this.searchList = [];
         this.fullList = [];
         this.main = $("#MainTextArea");
         this.selector = $("#LocationSelector");
         this.selectionBar = $("#SelectionBar");
+        this.options = $("#Options");
         this.populateSelector();
         this.selector.keypress((e) => {
             if (e.keyCode == 13) {
@@ -22,6 +24,12 @@ class FFMaterialBuddy {
                 this.update(null, null);
             }
         });
+        $("#OptionSelector").click(element => this.options.css("opacity") == "0" ? this.options.css("opacity", 1) : this.options.css("opacity", 0));
+        $("#ShowDescription").click(element => this.showDescriptions());
+        $("#HideDescription").click(element => this.hideDescriptions());
+        $("#BotanyFilter").click(element => this.updateFilters(element));
+        $("#MiningFilter").click(element => this.updateFilters(element));
+        $("#EnemyFilter").click(element => this.updateFilters(element));
     }
     populateSelector() {
         this.fullList = Locations.map.filter(map => map.map != "").map(map => map.map);
@@ -87,6 +95,64 @@ class FFMaterialBuddy {
         $(".enemyButton.enabled").click(element => this.expandClicked(element, "Enemy", "enemies"));
         $(".miningButton.enabled").click(element => this.expandClicked(element, "Mining", "gathering"));
         $(".botanyButton.enabled").click(element => this.expandClicked(element, "Botany", "gathering"));
+    }
+    showDescriptions() {
+        $("#HideDescription").addClass("disabled");
+        $("#ShowDescription").removeClass("disabled");
+        $(".text p").css({ height: "100%", opacity: 1 });
+    }
+    hideDescriptions() {
+        $("#ShowDescription").addClass("disabled");
+        $("#HideDescription").removeClass("disabled");
+        $(".text p").css({ height: "0", opacity: 0 });
+    }
+    updateFilters(element) {
+        var clicked = $(element.target);
+        if (clicked.attr('id') == "BotanyFilter") {
+            if (this.activeFilters.indexOf("botany") == -1) {
+                this.activeFilters.push("botany");
+                clicked.addClass("disabled");
+            }
+            else {
+                clicked.removeClass("disabled");
+                this.activeFilters = this.activeFilters.filter(item => item != "botany");
+            }
+        }
+        if (clicked.attr('id') == "MiningFilter") {
+            if (this.activeFilters.indexOf("mining") == -1) {
+                this.activeFilters.push("mining");
+                clicked.addClass("disabled");
+            }
+            else {
+                clicked.removeClass("disabled");
+                this.activeFilters = this.activeFilters.filter(item => item != "mining");
+            }
+        }
+        if (clicked.attr('id') == "EnemyFilter") {
+            if (this.activeFilters.indexOf("enemy") == -1) {
+                this.activeFilters.push("enemy");
+                clicked.addClass("disabled");
+            }
+            else {
+                clicked.removeClass("disabled");
+                this.activeFilters = this.activeFilters.filter(item => item != "enemy");
+            }
+        }
+        $(".itemBlock").each((index, item) => this.determineHiding($(item)));
+    }
+    determineHiding(item) {
+        var mining = item.find(".miningButton");
+        var botany = item.find(".botanyButton");
+        var enemy = item.find(".enemyButton");
+        if (!(this.activeFilters.indexOf("mining") != -1 && mining.hasClass("enabled"))
+            && !(this.activeFilters.indexOf("botany") != -1 && botany.hasClass("enabled"))
+            && !(this.activeFilters.indexOf("enemy") != -1 && enemy.hasClass("enabled"))) {
+            item.removeClass("disabled");
+            item.animate({ opacity: 1 });
+        }
+        else {
+            item.animate({ opacity: 0 }, 500, () => setTimeout(() => item.addClass("disabled"), 300));
+        }
     }
     expandClicked(element, type, classname) {
         var clicked = $(element.target);

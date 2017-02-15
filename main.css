@@ -4,7 +4,7 @@
 }
 
 .secondaryColor {
-  background-color: #181616;
+  background-color: #1C1818;
   color: #D0D0B6;
 }
 
@@ -31,25 +31,115 @@ html {
 }
 
 body {
-  background-color: #181616;
+  background-color: #1C1818;
   margin: 0;
   height: 100%;
 }
 
+#OptionSelector {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  z-index: 10;
+}
+
+#Options {
+  position: absolute;
+  opacity: 0;
+  width: 180px;
+  top: 38px;
+  right: 0;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 16px;
+  z-index: 10;
+  padding: 4px;
+  background-color: #1C1818;
+
+  transition: all .5s;
+}
+
+.settingLine {
+  height: 30px;
+}
+
+.settingTag {
+  float: left;
+  height: inherit;
+}
+
+.settingIcon {
+  float: right;
+  height: 28px;
+  width: 28px;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  background-size: 24px 24px;
+}
+
+h4 {
+  margin: 0;
+  padding-top: 8px;
+  padding-left: 4px;
+}
+
+#BotanyFilter {
+  background-image: url("boticon.png");
+}
+
+#MiningFilter {
+  background-image: url("minicon.png");
+}
+
+#EnemyFilter {
+  background-image: url("enemyicon.png");
+}
+
+#ShowDescription {
+  background-image: url("eye-3-24-2.png");
+}
+
+#HideDescription {
+  background-image: url("eyeclose-24-2.png");
+}
+
+#BotanyFilter.disabled {
+  background-image: url("boticon-disabled.png");
+}
+
+#MiningFilter.disabled {
+  background-image: url("minicon-disabled.png");
+}
+
+#EnemyFilter.disabled {
+  background-image: url("enemyicon-disabled.png");
+}
+
+#ShowDescription.disabled {
+  background-image: url("eye-3-24-disabled-2.png");
+}
+
+#HideDescription.disabled {
+  background-image: url("eyeclose-24-disabled-2.png");
+}
+
 #AppMain {
   width: 80%;
+  position: relative;
   margin-left: auto;
   margin-right: auto;
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 40px;
-  min-width: 448;
   padding-bottom: 80px;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   min-height: 100%;
   box-sizing: border-box;
 
   transition: all .5s;
+}
+
+#Heading {
+  white-space: pre;
 }
 
 #Heading img {
@@ -91,7 +181,7 @@ h3 {
   padding: 4px;
   padding-left: 12px;
   outline: none;
-  width: 90%;
+  width: 88%;
   height: 100%;
   box-sizing: border-box;
   border: none;
@@ -100,7 +190,7 @@ h3 {
 }
 
 #LocationSelector:hover {
-  background-color: #181616;
+  background-color: #1C1818;
 }
 
 #AutoComplete {
@@ -130,6 +220,13 @@ h3 {
 
 .itemBlock {
   margin-top: 8px;
+
+  transition: all .5s;
+}
+
+.itemBlock.disabled {
+  margin-top: 0;
+  height: 0;
 }
 
 .unexpandedBlock {
@@ -204,6 +301,8 @@ h3 {
   margin-bottom: 8px;
   color: #A09696;
   white-space: normal;
+
+  transition: all .5s;
 }
 
 .expandButtons span {
@@ -290,7 +389,7 @@ h3 {
 }
 
 .ui-menu .ui-menu-item div {
-  background: #181616;
+  background: #1C1818;
   padding: 6px;
   font-size: 12px;
   color: #D0D0B6;
@@ -373,7 +472,7 @@ h3 {
     margin-left: 60px;
   }
 
-  .bordered {
+  .bordered:not(.settingIcon) {
     border-radius: 0px !important;
     border-left-style: none;
     border-right-style: none;
@@ -383,6 +482,14 @@ h3 {
     margin-left: 0px;
     margin-right: 0px;
     padding-left: 8px
+  }
+
+  #Options {
+    width: 100%;
+  }
+
+  #Options .settingTag {
+    padding-left: 16px;
   }
 }
 
