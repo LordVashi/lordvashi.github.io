@@ -77,6 +77,7 @@ class FFMaterialBuddy {
         }
         if (selected == "")
             return;
+        $("#Footer").css({ position: "relative" });
         var index = Locations.map.findIndex((loc) => loc.map.toLowerCase() == selected);
         if (index == -1)
             return;

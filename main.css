@@ -82,6 +82,15 @@ h4 {
   padding-left: 4px;
 }
 
+a {
+  color: #D0D0B6;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #A0A086;
+}
+
 #BotanyFilter {
   background-image: url("boticon.png");
 }
@@ -234,6 +243,32 @@ h3 {
   transition: all .5s;
 }
 
+#Footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  padding: 4px 0;
+  margin-top: 4px;
+
+  border-color: #544;
+  border-top-style: groove;
+}
+
+#Footer span {
+  display: inline-block;
+}
+
+#Footer a {
+  color: #E0C086;
+}
+
+#Footer .dash {
+  margin: 0 8px;
+}
+
 .itemBlock {
   margin-top: 8px;
 
@@ -295,12 +330,6 @@ h3 {
   font-size: 16px;
   margin-bottom: 4px;
   margin-top: 0px;
-  color: inherit;
-  text-decoration: inherit;
-}
-
-.text a:hover {
-  color: #B0B096;
 }
 
 .text .itemName {
