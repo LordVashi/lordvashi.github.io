@@ -291,10 +291,16 @@ h3 {
   transition: all .5s;
 }
 
-.text h2 {
+.text a {
   font-size: 16px;
   margin-bottom: 4px;
   margin-top: 0px;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.text a:hover {
+  color: #B0B096;
 }
 
 .text .itemName {

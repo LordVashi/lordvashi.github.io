@@ -219,7 +219,7 @@ class FFMaterialBuddy {
             .append($("<div/>", { class: 'icon' })
             .append($("<img/>", { src: item.icon })))
             .append($("<div/>", { class: 'text' })
-            .append($("<h2/>", { text: item.name, class: "itemName" }))
+            .append($("<a/>", { text: item.name, class: "itemName", href: item.url, target: "_blank" }))
             .append($("<p/>", { text: item.description }))
             .append($("<div/>", { class: "expandButtons" })
             .append($("<span/>", { text: "Mining", class: "miningButton " + "disabled" }))
