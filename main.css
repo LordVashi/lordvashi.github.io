@@ -102,6 +102,14 @@ h4 {
   background-image: url("eyeclose-24-2.png");
 }
 
+#Expand {
+  background-image: url("expand.png");
+}
+
+#Collapse {
+  background-image: url("collapse.png");
+}
+
 #BotanyFilter.disabled {
   background-image: url("boticon-disabled.png");
 }
@@ -120,6 +128,14 @@ h4 {
 
 #HideDescription.disabled {
   background-image: url("eyeclose-24-disabled-2.png");
+}
+
+#Expand.disabled {
+  background-image: url("expand-disabled.png");
+}
+
+#Collapse.disabled {
+  background-image: url("collapse-disabled.png");
 }
 
 #AppMain {
@@ -229,6 +245,10 @@ h3 {
   height: 0;
 }
 
+.itemBlock.disabled .unexpandedBlock {
+  height: 0;
+}
+
 .unexpandedBlock {
   height: auto;
   vertical-align: middle;
@@ -314,6 +334,14 @@ h3 {
   white-space: nowrap;
 
   transition: all .5s;
+}
+
+.expandButtons span.enabled.plus::after {
+  content: " +";
+}
+
+.expandButtons span.enabled.minus::after {
+  content: " -";
 }
 
 .expandButtons span +span {

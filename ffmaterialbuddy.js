@@ -30,6 +30,8 @@ class FFMaterialBuddy {
         $("#BotanyFilter").click(element => this.updateFilters(element));
         $("#MiningFilter").click(element => this.updateFilters(element));
         $("#EnemyFilter").click(element => this.updateFilters(element));
+        $("#Expand").click(element => this.expandAll());
+        $("#Collapse").click(element => this.collapseAll());
     }
     populateSelector() {
         this.fullList = Locations.map.filter(map => map.map != "").map(map => map.map);
@@ -89,9 +91,15 @@ class FFMaterialBuddy {
         var itemsRaw = Final.results.filter((item) => ids.has(item.id));
         var prettyItems = itemsRaw.map(item => this.formHTML(selected, item)).reduce((total, add) => total.append(add), this.main);
         $(".expandedBlock").css({ height: 0 });
-        $(".enemyButton.enabled").text("Enemy +");
-        $(".miningButton.enabled").text("Mining +");
-        $(".botanyButton.enabled").text("Botany +");
+        $(".enemyButton.enabled").addClass("plus");
+        $(".miningButton.enabled").addClass("plus");
+        $(".botanyButton.enabled").addClass("plus");
+        this.updateExpandos();
+    }
+    updateExpandos() {
+        $(".enemyButton.enabled").off();
+        $(".miningButton.enabled").off();
+        $(".botanyButton.enabled").off();
         $(".enemyButton.enabled").click(element => this.expandClicked(element, "Enemy", "enemies"));
         $(".miningButton.enabled").click(element => this.expandClicked(element, "Mining", "gathering"));
         $(".botanyButton.enabled").click(element => this.expandClicked(element, "Botany", "gathering"));
@@ -139,6 +147,7 @@ class FFMaterialBuddy {
             }
         }
         $(".itemBlock").each((index, item) => this.determineHiding($(item)));
+        this.updateExpandos();
     }
     determineHiding(item) {
         var mining = item.find(".miningButton");
@@ -160,18 +169,47 @@ class FFMaterialBuddy {
         if (expandBlock.hasClass("open")) {
             expandBlock.animate({ height: 0 }, 300, () => {
                 expandBlock.animate({ opacity: 0 }, 50);
-                clicked.text(type + " +");
+                clicked.addClass("plus");
+                clicked.removeClass("minus");
                 expandBlock.removeClass("open");
             });
         }
         else {
             expandBlock.addClass("open");
             expandBlock.animate({ opacity: 1 }, 50, () => expandBlock.animate({ height: expandBlock.get(0).scrollHeight }, 400, () => {
-                clicked.text(type + " -");
+                clicked.removeClass("plus");
+                clicked.addClass("minus");
                 expandBlock.children("." + classname + "block").animate({ opacity: 1 });
                 expandBlock.css({ height: "auto" });
             }));
         }
+    }
+    expandAll() {
+        var expandBlock = $(".itemBlock").find(".expandedBlock");
+        var clicked = $(".expandButtons").find(".enabled");
+        expandBlock.addClass("open");
+        expandBlock.each((index, item) => {
+            var block = $(item);
+            block.animate({ opacity: 1 }, 50, () => block.animate({ height: block.get(0).scrollHeight }, 400, () => {
+                clicked.removeClass("plus");
+                clicked.addClass("minus");
+                block.children().animate({ opacity: 1 });
+                block.css({ height: "auto" });
+            }));
+        });
+    }
+    collapseAll() {
+        var expandBlock = $(".itemBlock").find(".expandedBlock");
+        var clicked = $(".expandButtons").find(".enabled");
+        expandBlock.each((index, item) => {
+            var block = $(item);
+            block.animate({ height: 0 }, 300, () => {
+                block.animate({ opacity: 0 }, 50);
+                clicked.removeClass("minus");
+                clicked.addClass("plus");
+                block.removeClass("open");
+            });
+        });
     }
     formHTML(selected, item) {
         var zones = [];
@@ -184,17 +222,24 @@ class FFMaterialBuddy {
             .append($("<h2/>", { text: item.name, class: "itemName" }))
             .append($("<p/>", { text: item.description }))
             .append($("<div/>", { class: "expandButtons" })
-            .append($("<span/>", { text: "Mining", class: "miningButton " + (item.gathering != "" && (item.gathering[0].type == "Mining" || item.gathering[0].type == "Quarrying") ? "enabled" : "disabled") }))
-            .append($("<span/>", { text: "Botany", class: "botanyButton " + (item.gathering != "" && (item.gathering[0].type == "Harvesting" || item.gathering[0].type == "Logging") ? "enabled" : "disabled") }))
-            .append($("<span/>", { text: "Enemy", class: "enemyButton " + (item.enemies != "" ? "enabled" : "disabled") }))))))
-            .append($("<div/>", { class: 'expandedBlock enemies secondaryColor bordered' }))
-            .append($("<div/>", { class: 'expandedBlock gathering secondaryColor bordered' }));
+            .append($("<span/>", { text: "Mining", class: "miningButton " + "disabled" }))
+            .append($("<span/>", { text: "Botany", class: "botanyButton " + "disabled" }))
+            .append($("<span/>", { text: "Enemy", class: "enemyButton " + "disabled" }))))));
+        var hasEnemy = false;
         if (item.enemies != "") {
             var enemiesDiv = htmlblock.find(".enemies");
             for (var enemy of item.enemies) {
                 if (enemy.map && (enemy.map.mapname.toLowerCase() == selected || this.searchList.indexOf(enemy.map.mapname.toLowerCase()) != -1)) {
                     if (zones.indexOf(enemy.map.mapname.toLowerCase()) == -1)
                         zones.push(enemy.map.mapname.toLowerCase());
+                    if (!hasEnemy) {
+                        hasEnemy = true;
+                        enemiesDiv = $("<div/>", { class: 'expandedBlock enemies secondaryColor bordered' });
+                        htmlblock.append(enemiesDiv);
+                        var button = htmlblock.find(".enemyButton");
+                        button.removeClass("disabled");
+                        button.addClass("enabled");
+                    }
                     enemiesDiv.append($("<div/>", { class: 'enemiesblock expand' })
                         .append($("<span/>", { class: "enemyName", text: enemy.name }))
                         .append($("<span/>", { class: "enemyLevel", text: (enemy.maxlevel == enemy.minlevel)
@@ -203,6 +248,7 @@ class FFMaterialBuddy {
                 }
             }
         }
+        var hasGather = false;
         if (item.gathering != "") {
             var mining = (item.gathering[0].type == "Mining" || item.gathering[0].type == "Quarrying");
             var gatheringDiv = htmlblock.find(".gathering");
@@ -211,6 +257,14 @@ class FFMaterialBuddy {
                 if (node.mapname && (node.mapname.toLowerCase() == selected || this.searchList.indexOf(node.mapname.toLowerCase()) != -1)) {
                     if (zones.indexOf(node.mapname.toLowerCase()) == -1)
                         zones.push(node.mapname.toLowerCase());
+                    if (!hasGather) {
+                        hasGather = true;
+                        gatheringDiv = $("<div/>", { class: 'expandedBlock gathering secondaryColor bordered' });
+                        htmlblock.append(gatheringDiv);
+                        var button = mining ? htmlblock.find(".miningButton") : htmlblock.find(".botanyButton");
+                        button.removeClass("disabled");
+                        button.addClass("enabled");
+                    }
                     var stars = Array.from(Array(gathering.stars).keys()).reduce((total, current) => total + "★", "");
                     var block = $("<div/>", { class: 'gatheringblock expand' }).appendTo(gatheringDiv);
                     block.append($("<span/>", { class: "nodeLevel", text: "Node: " + node.level }))
